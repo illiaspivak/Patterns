@@ -10,14 +10,18 @@ public class Main {
         Planet earth = new Planet("Earth",149600000l);
         Planet uran = new Planet("Uran",2871000000l);
         Planet saturn = new Planet("Saturn", 1434000000l);
-        Planet mars = new Planet("Mars",200000000l);
+        Planet mars = new Planet("Mars",228000000l);
 
-        sun.AddPlanet(earth);
-        sun.AddPlanet(uran);
-        sun.AddPlanet(saturn);
-        sun.AddPlanet(mars);
+
+        sun.addPlanet(earth);
+        sun.addPlanet(uran);
+        sun.addPlanet(saturn);
+        sun.addPlanet(mars);
 
         sun.printAllPlanets();
         sun.findPlanets("AR");
+
+        sun.minDistance();
+        sun.distanceToEarth();
     }
 }
